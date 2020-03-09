@@ -1,0 +1,405 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #292828;
+}
+
+h2 {
+    font-weight: bold;
+    color: #24c97a;
+    font-size: 42px !important;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    background-color: white;
+    /* white background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: -100px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 0.5s;
+    /* Transition effect when sliding down (and up) */
+    z-index: 9999;
+}
+
+.left-navbar {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.left-navbar img {
+    width: 100%;
+}
+
+.center-navbar {
+    font-size: 30px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right-navbar {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.right-navbar .insta {
+    width: 60%;
+}
+
+.right-navbar .barra {
+    width: 50%;
+}
+
+.right-navbar .face {
+    width: 45%;
+}
+
+.fab {
+    color: #24c97a;
+}
+
+.nav-item {
+    margin: 0 1%;
+}
+
+.nav-link {
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+
+/* SLIDER */
+
+.load {
+    animation: slide 2s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 15s infinite;
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.principal h1 {
+    font-weight: bold;
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.principal p {
+    font-weight: 300;
+    font-size: 33px;
+    margin-top: -17px;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../img/fotos-web1.png);
+    }
+    25% {
+        background-image: url(../img/fotos-web1.png);
+    }
+    25.01% {
+        background-image: url(../img/fotos-web2.png);
+    }
+    50% {
+        background-image: url(../img/fotos-web2.png);
+    }
+    50.01% {
+        background-image: url(../img/fotos-web3.png);
+    }
+    75% {
+        background-image: url(../img/fotos-web3.png);
+    }
+    75.01% {
+        background-image: url(../img/fotos-web4.png);
+    }
+    100% {
+        background-image: url(../img/fotos-web4.png);
+    }
+}
+
+
+/* QUIENES SOMOS */
+
+.quienes-somos {
+    /*height: 45vh;*/
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 600ms;
+    box-sizing: border-box;
+}
+
+.quienes-somos-interno {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.quienes-somos h2 {
+    margin-bottom: 5%;
+    padding: 5% 0;
+    text-align: center;
+}
+
+
+/* SERVICIOS */
+
+#que-hacemos {
+    padding: 0 15px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Acomoda en Linea los elementos en el orden que estan, segun su Ancho */
+    /*background-color: hsl(50, 100%, 97%);*/
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.que-hacemos-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.que-hacemos-tips {
+    width: 33%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 2%;
+}
+
+.que-hacemos-tips img {
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+.que-hacemos-tips h5 {
+    color: #292828;
+    font-size: 25px;
+}
+
+.que-hacemos-tips p {
+    color: #292828;
+    font-size: 16px;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio {
+    background-color: #f6f6f6;
+}
+
+#portfolio h2 {
+    margin-top: 4%;
+    padding: 5% 0;
+    text-align: center;
+}
+
+#portfolio .col-md-4 {
+    margin: 1.5% 0;
+}
+
+#portfolio img {
+    width: 100%;
+}
+
+#portfolio img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* CONTACTANOS */
+
+#contact-us h2 {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.form-contactUs {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-contactUs .input-group {
+    margin-bottom: 20px;
+}
+
+.btn-contact .btn {
+    color: black;
+}
+
+.btn-contact button:hover {
+    background-color: #24c97a;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 2%;
+}
+
+footer .left-footer {
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .right-footer {
+    text-align: center;
+    justify-content: space-around;
+}
+
+footer .fab {
+    width: 10%;
+}
+
+
+/* MEDIAQUERYS */
+
+@media (max-width:600px) {
+    .container-fluid {
+        width: 100%;
+    }
+    /* NAVBAR */
+    nav {
+        width: 100%;
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-navbar img {
+        width: 330%;
+    }
+    .center-navbar {
+        display: contents;
+        font-size: 20px;
+    }
+    .right-navbar {
+        width: 55%;
+        font-size: 20px;
+    }
+    /* SLIDER */
+    .principal h1 {
+        font-size: 44px;
+    }
+    .principal p {
+        font-size: 28px;
+    }
+    @keyframes slide {
+        0% {
+            background-image: url(../img/fotos-web-1.png);
+        }
+        25% {
+            background-image: url(../img/fotos-web-1.png);
+        }
+        25.01% {
+            background-image: url(../img/fotos-web-2.png);
+        }
+        50% {
+            background-image: url(../img/fotos-web-2.png);
+        }
+        50.01% {
+            background-image: url(../img/fotos-web-3.png);
+        }
+        75% {
+            background-image: url(../img/fotos-web-3.png);
+        }
+        75.01% {
+            background-image: url(../img/fotos-web-4.png);
+        }
+        100% {
+            background-image: url(../img/fotos-web-4.png);
+        }
+    }
+    /* QUIENES SOMOS? */
+    .quienes-somos {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        transition: all 600ms;
+        box-sizing: border-box;
+    }
+    .quienes-somos-interno {
+        width: 90%;
+    }
+    /* QUE HACEMOS? */
+    #que-hacemos {
+        width: 100%;
+        height: unset;
+    }
+    h2 {
+        text-align: center;
+    }
+    .que-hacemos-contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .que-hacemos-contenedor img {
+        width: 70%;
+    }
+    .que-hacemos-tips {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* PORTFOLIO */
+    .portfolio {
+        width: 100%;
+        height: auto;
+    }
+    /* CONTACTANOS */
+    .form-contactUs {
+        width: 90%;
+    }
+    /* FOOTER */
+}
